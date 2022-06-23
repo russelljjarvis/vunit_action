@@ -10,9 +10,9 @@ VU.add_verification_components()
 SRC_PATH = Path(__file__).parent / "src"
 
 VU.add_library("lib").add_source_files(
-    [SRC_PATH / "*.v", SRC_PATH / "test" / "*.v"]
+    [SRC_PATH / "*.vs", SRC_PATH / "test" / "*.vs"]
 )
-print([SRC_PATH / "*.v", SRC_PATH / "test" / "*.v"])
+print([SRC_PATH / "*.vs", SRC_PATH / "test" / "*.vs"])
 
 VU.main()
 print("did this work?")
